@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Tech Conference 2024</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="site-container">
+        <header class="header">
+            <a href="#">
+                <img id="logo" src="./img/logo.png" alt="Tech Conference 2024">
+            </a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Cadastrar</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li>
+                        <form class="login-bar">
+                            <input type="text" placeholder="Login" />
+                            <input type="password" name="password" placeholder="Senha" />
+                            <button>Login</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="banner">
+                <div class="banner-text">
+                    <h1>Tech Conference</h1>
+                    <h2>"O Tech Conference 2024 é o maior evento de tecnologia
+                        do ano, reunindo especialistas de todo o mundo para discutir inovações e
+                        tendências"</h2>
+                    <span class="banner-span">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat orci tristique enim
+                        aliquet, eget molestie sem faucibus. In vitae hendrerit ipsum, tincidunt tempor urna. Vestibulum
+                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla condimentum,
+                        tortor vel elementum imperdiet, diam mi dapibus nisl, quis porta nunc quam et ipsum. Cras
+                        dignissim risus non eros volutpat porttitor. Nullam eu pretium metus. Mauris dictum cursus
+                        scelerisque. Vestibulum fermentum turpis nulla, eu elementum libero auctor sit amet. Etiam sed
+                        urna sem. Quisque tincidunt tempor erat a imperdiet.
+                    </span>
+                </div>
+
+                <div>
+                    <img class="banner-img" src="./img/banner.jpg" alt="banner">
+                </div>
+            </div>
+
+            <form class="form">
+                <fieldset id="signup">
+                    <legend>Cadastre-se! </legend>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="number" name="number" required placeholder="(021)98765432">
+                    </div>
+                </fieldset>
+                <fieldset id="workshop">
+                    <legend>Selecione os Workshops de Interesse:</legend>
+                    <div class="workshop-container">
+
+                        <div class="workshop-group">
+
+                            <input type="checkbox" id="workshop1" name="workshop" value="Workshop 1">
+                            <label for="workshop1">Introdução ao JavaScript</label><br>
+                        </div>
+                        <div class="workshop-group">
+                            <input type="checkbox" id="workshop2" name="workshop" value="Workshop 2">
+                            <label for="workshop2">Avançado em CSS</label><br>
+                        </div>
+                        <div class="workshop-group">
+                            <input type="checkbox" id="workshop3" name="workshop" value="Workshop 3">
+                            <label for="workshop3">Desenvolvimento Web com React</label><br>
+                        </div>
+
+                        <div class="workshop-group">
+                            <input type="checkbox" id="workshop4" name="workshop" value="Workshop 4">
+                            <label for="workshop4">Programação Back-End com Node.js</label><br>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="newsletter">
+                    <legend>Gostaria de receber nossa Newsletter?</legend>
+                    <div>
+
+                        <input type="radio" id="newsletter_sim" name="newsletter" value="sim" required>
+                        <label for="newsletter_sim">Sim</label><br>
+                    </div>
+                    <div>
+
+                        <input type="radio" id="newsletter_nao" name="newsletter" value="nao" required>
+                        <label for="newsletter_nao">Não</label>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+        <footer>
+            <p>© 2024 Tech Conference. Todos os direitos reservados.</p>
+            <p>
+                Para mais informações, entre em contato conosco pelo email
+                techconference2024@exemplo.com
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
