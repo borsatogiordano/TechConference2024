@@ -53,22 +53,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .header-nav ul {
-        flex-direction: column;
-        gap: 8px;
-    }
 
-    .login-bar {
-        flex-direction: column;
-        gap: 8px;
-        padding: 16px;
-    }
-
-    #logo {
-        width: 60px;
-    }
-}
 
 .login-bar button:hover {
     background-color: #3E4054;
@@ -136,45 +121,6 @@ body {
 .banner-span {
     font-size: 16px;
     color: #E5E6E9;
-}
-
-@media (max-width: 1500px) {
-    .banner {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .banner-img {
-        width: 100%;
-        border-radius: 20px;
-    }
-
-    .banner-text {
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .banner-text h2 {
-        font-size: 20px;
-    }
-
-    .banner-span {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 500px) {
-    .banner-img {
-        display: none;
-    }
-
-    .banner-text {
-        font-size: 28px;
-    }
-
-    .banner-text h2 {
-        font-size: 18px;
-    }
 }
 
 .form {
@@ -255,28 +201,22 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media (max-width: 1000px) {
-    .form {
-        flex-direction: column;
-        padding: 20px;
-        max-width: 100%;
-    }
 
-    .form button {
-        width: 100%;
-        height: 60px;
-        font-size: 16px;
-    }
 
-    .newsletter {
-        flex-direction: column;
-        gap: 8px;
-    }
+.form button {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+}
 
-    footer {
-        font-size: 16px;
-        text-align: center;
-    }
+.newsletter {
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer {
+    font-size: 16px;
+    text-align: center;
 }
 
 
@@ -291,4 +231,77 @@ footer {
     padding: 24px;
     color: #E5E6E9;
     font-size: 18px;
+}
+
+@media (max-width: 1500px) {
+
+    .main{
+        gap: 8px;
+    }
+    .banner {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .banner-img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .banner-text {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .banner-text h2 {
+        font-size: 20px;
+    }
+
+    .banner-span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .form {
+        flex-direction: column;
+        padding: 20px;
+        max-width: 100%;
+        margin-top: 0px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .login-bar {
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px;
+    }
+
+    #logo {
+        width: 60px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .banner-img {
+        display: none;
+    }
+
+    .banner-text {
+        font-size: 28px;
+    }
+
+    .banner-text h2 {
+        font-size: 18px;
+    }
 }
